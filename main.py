@@ -5,7 +5,7 @@ import googleapiclient.discovery
 from oauth2client.service_account import ServiceAccountCredentials
 import warnings
 CREDENTIALS_FILE = 'crafty-hook-366323-29052cd4b0a9.json' #Данные сервисного аккаунта
-spreadsheet_id = '1r1hsq18owdN_qMHenhYKy8B1x8FYSxC4q0Bq4eSxT8E' #ID таблицы
+spreadsheet_id = 'enter your sheet id here' #ID таблицы
 credentials = ServiceAccountCredentials.from_json_keyfile_name(
     CREDENTIALS_FILE,
     ['https://www.googleapis.com/auth/spreadsheets',
@@ -128,4 +128,4 @@ async def on_member_join(member):
 #         }
 #     ).execute()
 
-bot.run('MTAzMjMzODY2NDQwOTI2ODMwNA.GQNuoh.fBaOy5EXWIBDJ3Hs1NWrFJz6VmzpVWbit1XUZY') #Токен бота
+bot.run('enter bot token here') #Токен бота
